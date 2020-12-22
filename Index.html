@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;700&display=swap" rel="stylesheet">
     <title>My tittle</title>
 </head>
 <style>
     body {
         background-color: #FF99AC ;
         margin: 0px;
+        font-family: 'Mulish', sans-serif;
     }
     .header{
         background-color: #FF99AC ;
@@ -16,28 +19,54 @@
         height: 80px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .header__img{
         width: 200px;
         margin-top: 10px;
-        margin-left: 10px;
+        margin-left: 30px;
     }
     .header__menu{
         margin-right: 30px;
     }
     .header__menu ul{
-        /*display: none;*/
+        display: none;
         list-style: none;
         padding: 0px;
         position: absolute;
         width: 100px;
         text-align: right;
-        margin: 0px, 0px, 0px, 0px;
+        margin: 0px 0px 0px -14px;
+    }
+    .header__menu:hover ul, ul:hover{
+        display: block;
     }
     .header__menu--profile{
         margin-right: 8px;
+        display: flex;
+        align-items: center;
+    }
+    .header__menu--profile img{
         width: 40px;
+        height: 40px;
+        margin-right: 8px;
+        margin-top: 10px;
+    }
+
+    .header__menu--profile p{
+        margin: 0px;
+        color: whitesmoke;
+    }
+    .header__menu li{
+        margin: 10px 0px;
+    }
+    .header__menu li a{
+        color: white;
+        text-decoration: none;
+    }
+    .header__menu li a:hover{
+        text-decoration: underline;
     }
 </style>
 </body>
@@ -46,13 +75,13 @@
       <div class="header__menu">
           <div class="header__menu--profile">
               <img src="C:\Users\valen\Desktop\PlayListUniverse\Imagenes platzi\User.png" alt="">
-              <p>Perfil</p>
+              <strong><p>Perfil</p></strong>
           </div>
           <ul>
-              <li><a href="/">Cuenta</a></li>
-              <li><a href="/">Cerrar sesión</a></li>
+              <strong><li><a href="/">Cuenta</a></li></strong>
+              <strong><li><a href="/">Cerrar sesión</a></li></strong>
           </ul>
       </div>
  </header>
- 
+
 </html>
